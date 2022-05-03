@@ -35,6 +35,8 @@ public class Usuario {
 	
 	private String foto;
 	
+	private String tipo;
+	
 	@Schema(example = "email@email.com.br")
 	@NotBlank (message = "usuario obrigatório!")
 	@Email(message = "O atributo Usuario deve ser um email válido!")
@@ -90,6 +92,14 @@ public class Usuario {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	public String getUsuario() {
